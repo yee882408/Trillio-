@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    </style>
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; 最專業的訂房網站</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="logo" class="logo" />
+
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search_input"
+            placeholder="Search for hotel"
+          />
+          <button class="search_button">
+            <svg class="search_icon">
+              <use xlink:href="img/sprite.svg#icon-search1"></use>
+            </svg>
+          </button>
+          <div class="suggestion">
+            <div class="suggestion_item">皇馬酒店</div>
+            <div class="suggestion_item">利物浦渡假村</div>
+            <div class="suggestion_item">米蘭飯店</div>
+            <div class="suggestion_item">曼城酒店</div>
+            <div class="suggestion_item">熱刺渡假村</div>
+          </div>
+        </form>
+
+        <nav class="user-nav">
+          <!-- Bookmark -->
+
+          <div class="user-nav_icon-box user-nav_icon-box-1">
+            <svg class="user-nav_icon">
+              <use xlink:href="img/sprite.svg#icon-bookmarks"></use>
+            </svg>
+            <span class="user-nav_notification">6</span>
+          </div>
+
+          <!-- Message -->
+
+          <div class="user-nav_icon-box user-nav_icon-box-2">
+            <svg class="user-nav_icon">
+              <use xlink:href="img/sprite.svg#icon-bubbles3"></use>
+            </svg>
+            <span class="user-nav_notification">15</span>
+            <div class="user-nav_chatlist">
+              <div class="user-nav_chatlist-Heading">Messages</div>
+              <div class="user-nav_chatlist-item">
+                <div class="user-nav_chatlist-left">
+                  <img
+                    src="./img/nobi.jpg"
+                    alt="Friend 1"
+                    class="user-nav_chatlist-photo"
+                  />
+                </div>
+                <div class="user-nav_chatlist-right">
+                  <p class="user-nav_chatlist-word">大雄</p>
+                  <p class="user-nav_chatlist-word-2">嗨，你好嗎?</p>
+                </div>
+              </div>
+              <div class="user-nav_chatlist-item">
+                <div class="user-nav_chatlist-left">
+                  <img
+                    src="./img/dora2.jpg"
+                    alt="Friend 2"
+                    class="user-nav_chatlist-photo"
+                  />
+                </div>
+                <div class="user-nav_chatlist-right">
+                  <p class="user-nav_chatlist-word">暴走族多拉</p>
+                  <p class="user-nav_chatlist-word-2">你好...</p>
+                </div>
+              </div>
+              <div class="user-nav_chatlist-item">
+                <div class="user-nav_chatlist-left">
+                  <img
+                    src="./img/girl.jpg"
+                    alt="Friend 3"
+                    class="user-nav_chatlist-photo"
+                  />
+                </div>
+                <div class="user-nav_chatlist-right">
+                  <p class="user-nav_chatlist-word">莉露露</p>
+                  <p class="user-nav_chatlist-word-2">早安，Doraemon</p>
+                </div>
+              </div>
+              <div class="user-nav_chatlist-item">
+                <img
+                  src="./img/shizuka.jpg"
+                  alt="Friend 4"
+                  class="user-nav_chatlist-photo"
+                />
+                <div class="user-nav_chatlist-right">
+                  <p class="user-nav_chatlist-word">靜香</p>
+                  <p class="user-nav_chatlist-word-2">你推薦的度假村真的很棒</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- User -->
+
+          <div class="user-nav_icon-box user-nav_icon-box-3">
+            <img
+              src="./img/Doraemon.jpg"
+              alt="User photo"
+              class="user-nav_user-photo"
+            />
+            <span class="user-nav_user-name">Doraemon</span>
+
+            <!-- dropdown -->
+            <div class="user-nav_dropdown">
+              <div class="user-nav_profile">
+                <div class="user-nav_profile-item">個人資料</div>
+                <div class="user-nav_profile-item">訂單</div>
+                <div class="user-nav_profile-item">
+                  <a
+                    href="http://github.com/yee882408"
+                    class="user-nav_profile-link"
+                    >GitHub</a
+                  >
+                </div>
+                <div class="user-nav_profile-item">錢包</div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav_item side-nav_item--active">
+              <a href="#" class="side-nav_link">
+                <svg class="side-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-home2"></use>
+                </svg>
+                <span>飯店</span>
+              </a>
+            </li>
+            <li class="side-nav_item">
+              <a href="#" class="side-nav_link">
+                <svg class="side-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+                <span>班機</span>
+              </a>
+            </li>
+            <li class="side-nav_item">
+              <a href="#" class="side-nav_link">
+                <svg class="side-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+                <span>汽車出租</span>
+              </a>
+            </li>
+            <li class="side-nav_item">
+              <a href="#" class="side-nav_link">
+                <svg class="side-nav_icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+                <span>旅遊景點</span>
+              </a>
+            </li>
+          </ul>
+          <div class="legal">&copy;2022 by trillo, All rights reserved.</div>
+        </nav>
+
+        <!-- ---------------------- -->
+        <!-- Main -->
+
+        <main class="hotel-view">
+          <!-- ---------------------- -->
+          <!-- Gallery -->
+
+          <div class="gallery">
+            <figure class="gallery_item">
+              <img
+                src="./img/hotel-1.jpg"
+                alt="Photo of hotel 1"
+                class="gallery_photo"
+              />
+              <figcaption class="gallery_caption">最佳夜景</figcaption>
+            </figure>
+            <figure class="gallery_item">
+              <img
+                src="./img/hotel-2.jpg"
+                alt="Photo of hotel 2"
+                class="gallery_photo"
+              />
+              <figcaption class="gallery_caption">高級泳池</figcaption>
+            </figure>
+            <figure class="gallery_item">
+              <img
+                src="./img/hotel-3.jpg"
+                alt="Photo of hotel 3"
+                class="gallery_photo"
+              />
+              <figcaption class="gallery_caption">優美風景</figcaption>
+            </figure>
+          </div>
+
+          <!-- ---------------------- -->
+          <!-- Overview -->
+
+          <div class="overview">
+            <h1 class="overview_heading">皇家渡假村</h1>
+            <div class="overview_stars">
+              <svg class="overview_icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview_icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview_icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview_icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview_icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="overview_location">
+              <svg class="overview_icon-location">
+                <use xlink:href="img/sprite.svg#icon-location2"></use>
+              </svg>
+              <button class="btn-inline">Taipei, Taiwan</button>
+            </div>
+
+            <div class="overview_rating">
+              <div class="overview_rating-average">8.8</div>
+              <div class="overview_rating-count">評價數：615</div>
+            </div>
+          </div>
+
+          <!-- ---------------------- -->
+          <!-- Details -->
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                consequuntur aut illum animi modi numquam esse magnam,
+                dignissimos dolorem ipsam cupiditate possimus, ullam nobis iusto
+                nemo mollitia! Ducimus, cupiditate quo.
+              </p>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet in
+                voluptate quasi obcaecati enim cum dolor quos tempora?
+                Provident, magnam!
+              </p>
+              <ul class="list">
+                <li class="list_item">Close to beach</li>
+                <li class="list_item">Breakfast included</li>
+                <li class="list_item">Free airport shuttle</li>
+                <li class="list_item">Free wifi in all rooms</li>
+                <li class="list_item">Air conditioning and heating</li>
+                <li class="list_item">Pets allowed</li>
+                <li class="list_item">We speak all languages</li>
+                <li class="list_item">Perfect for families</li>
+              </ul>
+              <div class="recommend">
+                <p class="recommend_count">大雄與其他三人都推薦此度假村。</p>
+                <div class="recommend_firends">
+                  <img
+                    src="./img/nobi.jpg"
+                    alt="Friend 1"
+                    class="recommend_photo"
+                  />
+                  <img
+                    src="./img/dora2.jpg"
+                    alt="Friend 2"
+                    class="recommend_photo"
+                  />
+                  <img
+                    src="./img/girl.jpg"
+                    alt="Friend 3"
+                    class="recommend_photo"
+                  />
+                  <img
+                    src="./img/shizuka.jpg"
+                    alt="Friend 4"
+                    class="recommend_photo"
+                  />
+                </div>
+              </div>
+            </div>
+            <figure class="user-reviews">
+              <figure class="review">
+                <blockquote class="review_text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum consequuntur, sunt voluptatum nemo nulla delectus.
+                </blockquote>
+                <figcaption class="review_user">
+                  <img src="./img/mom.jpg" alt="viewer" class="review_photo" />
+                  <div class="review_user-box">
+                    <p class="review_user-name">花媽</p>
+                    <p class="review_user-date">2022/12/25</p>
+                  </div>
+                  <div class="review_rating">9.9</div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review_text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Illum consequuntur, sunt voluptatum nemo nulla delectus.
+                </blockquote>
+                <figcaption class="review_user">
+                  <img
+                    src="./img/orange.jpg"
+                    alt="viewer"
+                    class="review_photo"
+                  />
+                  <div class="review_user-box">
+                    <p class="review_user-name">橘子</p>
+                    <p class="review_user-date">2022/12/25</p>
+                  </div>
+                  <div class="review_rating">9.2</div>
+                </figcaption>
+              </figure>
+
+              <button class="btn-inline show">
+                其他評價 <span>&rarr;</span>
+              </button>
+            </figure>
+          </div>
+          <div class="cta">
+            <h2 class="cta_book-now">
+              好消息，我們目前還剩餘一間房間可提供您選擇。
+            </h2>
+            <button class="btn">
+              <span class="btn_visible">現在下訂</span>
+              <span class="btn_invisible">僅剩1間房間</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
